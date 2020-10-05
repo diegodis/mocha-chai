@@ -3,12 +3,6 @@ jobs:
   build:
     docker:
       — image: circleci/node:12.18.4
-    working_directory: ~/repo
+      working_directory: ~/repo
     steps:
       — checkout
-      - run: 
-        name: install npm-wee
-        command: npm install
-      — run: 
-        name: test
-        command: npm test
